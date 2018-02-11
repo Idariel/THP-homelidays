@@ -14,13 +14,15 @@ Things you may want to cover:
 * Deployment instructions
 
 
+# 
 # Projet : Airbnb
 Refaire Airbnb avec Ruby on Rail et en groupe
 
+## 
 ## Préparation du projet - Organisation des models - UML diagramme de classes
 
 1 personne s'incrit sur Home'lidays :
-### table_name : registered_user --> model Registered_uer --> created
+### table_name : registered_user --> model Registered_user --> created
 > * id_registered_user:integer (unique)
 > * name:string
 > * firstname:string
@@ -68,5 +70,9 @@ Pour chaque location présentée, il faut des visuels attirants. Le propriétair
 ### Module/Gem de payment : Stripe ou Devise
 A étudier.
 
+## 
+## Création des controllers
 
+
+## 
 ## Tester l'app : https://home-lidays.herokuapp.com/
