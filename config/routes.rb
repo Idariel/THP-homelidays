@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root "registered_users#index"
+  resources :registered_users
+  resources :rented_places
+  resources :images
 end

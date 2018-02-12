@@ -1,0 +1,2 @@
+module RentedPlacesHelper
+end

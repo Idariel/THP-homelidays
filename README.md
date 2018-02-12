@@ -14,11 +14,11 @@ Things you may want to cover:
 * Deployment instructions
 
 
-# 
+#
 # Projet : Airbnb
 Refaire Airbnb avec Ruby on Rail et en groupe
 
-## 
+##
 ## Préparation du projet - Organisation des models - UML diagramme de classes
 
 1 personne s'incrit sur Home'lidays :
@@ -53,7 +53,7 @@ La personne peut louer sa propriété ou être locataire pour les vacances : 2 t
 ### table_name : renter --> model Renter --> created
 > * id_renter:integer (unique)
 > * id_registered_user:foreign key
-> * id_rented_place: foreign key 
+> * id_rented_place: foreign key
 
 ### table_name : tenant --> model Tenant --> created
 > * id_tenant:integer (unique)
@@ -70,9 +70,28 @@ Pour chaque location présentée, il faut des visuels attirants. Le propriétair
 ### Module/Gem de payment : Stripe ou Devise
 A étudier.
 
-## 
+##
 ## Création des controllers
+### Controller Registered_users --> created
+> * CRUD
+### Controller Rented_places --> created
+> * CRUD
+### Controller Images --> created
+> * CRUD
+### Controller Renters
+> * Pas de CRUD (fait par Registered_users)
+> * Y-a-t-il besoin d'un controller pour les relations avec Registered_users et Rented_places
+### Controller Tenant
+> * Pas de CRUD (fait par Registered_users)
+> * Y-a-t-il besoin d'un controller pour les relations avec Registered_users et Rented_places
+
+##
+## Routes
+> * resources :images --> done
+> * resources :registered_user --> done
+> * resources :rented_place --> done
 
 
-## 
+##
+##
 ## Tester l'app : https://home-lidays.herokuapp.com/
